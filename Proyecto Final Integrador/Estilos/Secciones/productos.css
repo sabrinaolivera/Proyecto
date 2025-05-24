@@ -1,0 +1,40 @@
+
+.Productos-destacados{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 10px 12px;
+    text-align: center; 
+    transition: all;
+    
+        .contenedor-productos {
+            size-adjust: auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            flex-wrap: wrap;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+            .productos {       
+                width: 25%;
+                min-width: 300px;
+                margin: 15px 0;
+                padding: 10px 12px;
+                border-radius: 20px;
+                border: 1px solid #cce7d0;
+                cursor: pointer;
+                transition: all;
+                }
+        }
+}
+
+img {
+   max-width: 100%;
+   border-radius: 20px;
+    }
+
+@media (max-width: 1200px) {
+   .Productos-destacados .contenedor-productos {
+     justify-content: space-around;
+                }
+            }
